@@ -10,6 +10,7 @@ class CreateReviews < ActiveRecord::Migration
       t.boolean :approved, :default => false
       t.boolean :good
       t.boolean :featured, default: false
+      t.decimal :recommend, default: 0, scale: 2, precision: 5
       t.timestamps
     end
   end
