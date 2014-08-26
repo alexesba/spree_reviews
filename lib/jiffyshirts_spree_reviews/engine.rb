@@ -1,8 +1,8 @@
-module SpreeReviews
+module JiffyshirtsSpreeReviews
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_reviews'
+    engine_name 'jiffyshirts_spree_reviews'
 
     config.autoload_paths += %W(#{config.root}/lib)
 

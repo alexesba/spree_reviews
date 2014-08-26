@@ -1,1 +1,1 @@
-NB_STARS = 5
+NB_STARS = 10

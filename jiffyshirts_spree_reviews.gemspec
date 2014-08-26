@@ -1,13 +1,13 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_reviews'
-  s.version     = '1.0.0'
+  s.name        = 'jiffyshirts_spree_reviews'
+  s.version     = '2.3.1'
   s.summary     = 'Basic review and ratings facility for Spree'
-  s.authors 	  = ['Paul Callaghan']
+  s.authors 	  = ['CrowdInt']
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
 
-  s.homepage     = 'https://github.com/spree/spree-reviews/'
+  s.homepage     = 'https://github.com/alexesba/spree_reviews.git'
 
   s.files        = `git ls-files`.split("\n")
   s.test_files   = `git ls-files -- spec/*`.split("\n")
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'poltergeist', '1.5.0'
   s.add_development_dependency 'rspec-rails', '~> 2.14'
   s.add_development_dependency 'factory_girl', '~> 4.4'
-  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'pg'
   s.add_development_dependency 'simplecov', '~> 0.7.1'
   s.add_development_dependency 'coffee-rails', '~> 4.0.0'
   s.add_development_dependency 'sass-rails', '~> 4.0.0'

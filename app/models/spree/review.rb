@@ -9,14 +9,14 @@ class Spree::Review < ActiveRecord::Base
   validates :name, presence: true
   validates :review, presence: true
 
-  validates :rating, numericality: { only_integer: true,
-                                     greater_than_or_equal_to: 1, 
-                                     less_than_or_equal_to: 5,
+  validates :rating, numericality: { only_integer: false,
+                                     greater_than_or_equal_to: 0.5,
+                                     less_than_or_equal_to: 5.0,
                                      message: Spree.t('you_must_enter_value_for_rating') }
 
 
   default_scope { order("spree_reviews.created_at DESC") }
-  
+
   scope :localized, ->(lc) { where('spree_reviews.locale = ?', lc) }
   scope :most_recent_first, -> { order('spree_reviews.created_at DESC') }
   scope :oldest_first, -> { reorder('spree_reviews.created_at ASC') }

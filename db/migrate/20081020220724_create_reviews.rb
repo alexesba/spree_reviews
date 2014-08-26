@@ -4,10 +4,12 @@ class CreateReviews < ActiveRecord::Migration
       t.integer :product_id
       t.string  :name
       t.string  :location
-      t.integer :rating
+      t.float   :rating
       t.text    :title
       t.text    :review
       t.boolean :approved, :default => false
+      t.boolean :good
+      t.boolean :featured, default: false
       t.timestamps
     end
   end
