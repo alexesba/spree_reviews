@@ -20,12 +20,12 @@ describe Spree::Review do
         build(:review, rating: nil).should_not be_valid
       end
 
-      it 'does not validate when the rating is not a number' do
+      it 'doesnot validate when the rating is not a number' do
         build(:review, rating: 'not_a_number').should_not be_valid
       end
 
-      it 'does not validate when the rating is a float' do
-        build(:review, rating: 2.718).should_not be_valid
+      it 'does validate when the rating is a float' do
+        build(:review, rating: 2.718).should be_valid
       end
 
       it 'does not validate when the rating is less than 1' do
