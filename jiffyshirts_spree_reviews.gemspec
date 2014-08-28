@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'jiffyshirts_spree_reviews'
-  s.version     = '2.3.1.1'
+  s.version     = '2.3.1.2'
   s.summary     = 'Basic review and ratings facility for Spree'
   s.authors 	  = ['CrowdInt']
   s.description = s.summary
